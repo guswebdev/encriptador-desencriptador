@@ -34,79 +34,87 @@
         <div class="main-content">
           <!-- LLAVES Y PRESENTACION-->
           <section class="container-llaves">
-            <h2>Encriptador APP</h2>
-            <p>Esta es una App que encripta textos, asi podras intercambiar mensajes secretos con otras personas que sepan las llaves de encriptacion utilizadas.</p>
-            <h3>Elige las llaves para encriptar:</h3>
+            <h2 class="llaves-title">Encriptador APP</h2>
+            <p class="llaves-description">
+              Esta es una App que encripta textos, asi podras intercambiar
+              mensajes secretos con otras personas que sepan las llaves de
+              encriptacion utilizadas.
+            </p>
+            <h3 class="llaves-title-h3">Elige las llaves para encriptar:</h3>
             <form action="" class="form-llaves">
-                <label for="">Llave para 'a':</label>
-                <input type="text">
-                <label for="">Llave para 'e':</label>
-                <input type="text">
-                <label for="">Llave para 'i':</label>
-                <input type="text">
-                <label for="">Llave para 'o':</label>
-                <input type="text">
-                <label for="">Llave para 'u':</label>
-                <input type="text">
-                <p>Solo letras minúsculas y sin acentos</p>
-                <button>Guardar</button>
-                <button>Resetear</button>
-                <p></p>
+              <label for="" class="form-label">Llave para 'a':</label>
+              <input type="text" class="form-input" />
+              <label for="" class="form-label">Llave para 'e':</label>
+              <input type="text" class="form-input" />
+              <label for="" class="form-label">Llave para 'i':</label>
+              <input type="text" class="form-input" />
+              <label for="" class="form-label">Llave para 'o':</label>
+              <input type="text" class="form-input" />
+              <label for="" class="form-label">Llave para 'u':</label>
+              <input type="text" class="form-input" />
+              <p class="form-alert">Solo letras minúsculas y sin acentos</p>
+              <div class="form-btns">
+                <button class="btn btn-save">Guardar</button>
+                <button class="btn btn-reset">Resetear</button>
+              </div>
+              <p class="form-success">¡Llaves Guardadas!</p>
+            </form>
+          </section>
+
+          <div class="encript">
+            <!-- INPUT -->
+            <form class="form">
+              <div class="container-textarea">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  placeholder="Ingrese el texto aqui"
+                  class="textarea"
+                ></textarea>
+              </div>
+
+              <p class="info-text">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Solo letras minúsculas y sin acentos</span>
+              </p>
+
+              <div class="btns">
+                <button class="btn btn-encriptar">Encriptar</button>
+                <button class="btn btn-desencriptar">Desencriptar</button>
+              </div>
             </form>
 
-          </section>
-          <!-- INPUT -->
-          <form class="form">
-            <div class="container-textarea">
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Ingrese el texto aqui"
-                class="textarea"
-              ></textarea>
-            </div>
-
-            <p class="info-text">
-              <i class="fa-solid fa-circle-info"></i>
-              <span>Solo letras minúsculas y sin acentos</span>
-            </p>
-
-            <div class="btns">
-              <button class="btn btn-encriptar">Encriptar</button>
-              <button class="btn btn-desencriptar">Desencriptar</button>
-            </div>
-          </form>
-
-          <!-- OUTPUT -->
-          <section class="output">
-            <article class="output-init">
-              <div class="output-img">
-                <img
-                  src="images/ilustracion.svg"
-                  alt="ilustracionde un muñeco"
-                  class="img-fluid"
-                />
-              </div>
-              <h2 class="output-title">Ningún mensaje fue encontrado</h2>
-              <p class="output-description">
-                Ingresa el texto que desees encriptar o desencriptar.
-              </p>
-            </article>
-            <article class="output-message hide">
-              <form class="form-output">
-                <textarea
-                  name="message-return"
-                  class="textarea output-textarea"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-                <button class="btn btn-copy">Copiar</button>
-                <p class="copiado-exito">¡Texto copiado con éxito!</p>
-              </form>
-            </article>
-          </section>
+            <!-- OUTPUT -->
+            <section class="output">
+              <article class="output-init">
+                <div class="output-img">
+                  <img
+                    src="images/ilustracion.svg"
+                    alt="ilustracionde un muñeco"
+                    class="img-fluid"
+                  />
+                </div>
+                <h2 class="output-title">Ningún mensaje fue encontrado</h2>
+                <p class="output-description">
+                  Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+              </article>
+              <article class="output-message hide">
+                <form class="form-output">
+                  <textarea
+                    name="message-return"
+                    class="textarea output-textarea"
+                    cols="30"
+                    rows="5"
+                  ></textarea>
+                  <p class="copiado-exito">¡Texto copiado con éxito!</p>
+                  <button class="btn btn-copy">Copiar</button>
+                </form>
+              </article>
+            </section>
+          </div>
         </div>
       </div>
     </main>
@@ -115,7 +123,6 @@
     <footer class="footer">
       <div class="container">
         <div class="copyright">
-          <small>Sitio web creado por <strong>Gustavo Miño</strong></small>
           <div class="redes">
             <a href="https://github.com/guswebdev" target="_blank">
               <i class="fa-brands fa-github"></i>
@@ -127,6 +134,7 @@
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
+          <small>Sitio web creado por <strong>Gustavo Miño</strong></small>
         </div>
       </div>
     </footer>
