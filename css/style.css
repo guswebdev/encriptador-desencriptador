@@ -166,6 +166,21 @@
   .output-textarea {
     background-color: var(--color-white);
   }
+
+  .copiado-exito {
+    color: white;
+    background-color: rgb(74, 173, 74);
+    border-radius: 5px;
+    padding: .5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+  }
+  
+  .show {
+    opacity: 1;
+    visibility: visible;
+  }
   
   /* -- FOOTER -- */
   .footer {
