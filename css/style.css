@@ -55,10 +55,6 @@
     display: none;
   }
   
-  p.color-red {
-    color: red;
-    font-weight: bold;
-  }
   /* -- HEADER -- */
   .header {
     padding: 1rem 0;
@@ -94,19 +90,14 @@
     color: var(--color-darkblue-300);
   }
   
-  .container-info {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .info-img {
-    height: 16px;
-  }
-  
   .info-text {
-    font-size: 14px;
+    font-size: .8rem;
     color: var(--color-gray-400);
+    padding: .5rem;
+  }
+
+  .info-text span {
+    margin-left: .5rem;
   }
   
   .btns {
@@ -206,6 +197,12 @@
 
   .redes i:hover {
     transform: scale(1.1);
+  }
+
+  .color-red {
+    color: white;
+    background-color: rgb(194, 67, 67);
+    border-radius: 5px;
   }
   
   

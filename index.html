@@ -5,87 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador Alura</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/8e35587b1c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8e35587b1c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-      <!--ESTA ES LA VERSION 2-->
+    <!--ESTA ES LA VERSION 2-->
     <!-- HEADER -->
     <header class="header">
-        <div class="container">
-            <div class="container-img">
-                <img src="images/logo.svg" alt="Logo" class="img-fluid">
-            </div>
+      <div class="container">
+        <div class="container-img">
+          <img src="images/logo.svg" alt="Logo" class="img-fluid" />
         </div>
+      </div>
     </header>
-    
+
     <!-- MAIN -->
     <main>
-        <div class="container">
-            <section class="main-content">
-                
-                <!-- INPUT -->
-                <form class="form">
-                    <div class="container-textarea">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Ingrese el texto aqui" class="textarea"></textarea>
-                    </div>
-                    <div class="container-info">
-                        <div class="info-img">
-                            <img src="images/info.svg" alt="Icono de informacion" class="img-fluid">
-                        </div>
-                        <p class="info-text">
-                            Solo letras minúsculas y sin acentos
-                        </p>
-                    </div>
-                    <div class="btns">
-                        <button class="btn btn-encriptar">Encriptar</button>
-                        <button class="btn btn-desencriptar">Desencriptar</button> 
-                    </div>
-                </form>
-                
-                <!-- OUTPUT -->
-                <article class="output">
-                    <div class="output-init">
-                        <div class="output-img">
-                            <img src="images/ilustracion.svg" alt="ilustracionde un muñeco" class="img-fluid">
-                        </div>
-                        <h2 class="output-title">Ningún mensaje fue encontrado</h2>
-                        <p class="output-description">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    </div>
-                    <div class="output-message hide">
-                        <form class="form-output">
-                            <textarea name="message-return" class="textarea output-textarea" cols="30" rows="10"></textarea>
-                            <button class="btn btn-copy">Copiar</button>
-                            <p class="copiado-exito">¡Texto copiado con éxito!</p>
-                        </form>
-                    </div>
-                </article>
+      <div class="container">
+        <section class="main-content">
+          <!-- INPUT -->
+          <form class="form">
+            <div class="container-textarea">
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Ingrese el texto aqui"
+                class="textarea"
+              ></textarea>
+            </div>
 
-            </section>
-        </div>
+            <p class="info-text">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Solo letras minúsculas y sin acentos</span>
+            </p>
+
+            <div class="btns">
+              <button class="btn btn-encriptar">Encriptar</button>
+              <button class="btn btn-desencriptar">Desencriptar</button>
+            </div>
+          </form>
+
+          <!-- OUTPUT -->
+          <article class="output">
+            <div class="output-init">
+              <div class="output-img">
+                <img
+                  src="images/ilustracion.svg"
+                  alt="ilustracionde un muñeco"
+                  class="img-fluid"
+                />
+              </div>
+              <h2 class="output-title">Ningún mensaje fue encontrado</h2>
+              <p class="output-description">
+                Ingresa el texto que desees encriptar o desencriptar.
+              </p>
+            </div>
+            <div class="output-message hide">
+              <form class="form-output">
+                <textarea
+                  name="message-return"
+                  class="textarea output-textarea"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <button class="btn btn-copy">Copiar</button>
+                <p class="copiado-exito">¡Texto copiado con éxito!</p>
+              </form>
+            </div>
+          </article>
+        </section>
+      </div>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container">
-            <div class="copyright">
-                <small>Sitio web creado por <strong>Gustavo Miño</strong></small>
-                <div class="redes">
-                    <a href="https://github.com/guswebdev" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/gustavo-dev-web/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="copyright">
+          <small>Sitio web creado por <strong>Gustavo Miño</strong></small>
+          <div class="redes">
+            <a href="https://github.com/guswebdev" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gustavo-dev-web/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="index.js" type="module"></script>
