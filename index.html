@@ -31,7 +31,30 @@
     <!-- MAIN -->
     <main>
       <div class="container">
-        <section class="main-content">
+        <div class="main-content">
+          <!-- LLAVES Y PRESENTACION-->
+          <section class="container-llaves">
+            <h2>Encriptador APP</h2>
+            <p>Esta es una App que encripta textos, asi podras intercambiar mensajes secretos con otras personas que sepan las llaves de encriptacion utilizadas.</p>
+            <h3>Elige las llaves para encriptar:</h3>
+            <form action="" class="form-llaves">
+                <label for="">Llave para 'a':</label>
+                <input type="text">
+                <label for="">Llave para 'e':</label>
+                <input type="text">
+                <label for="">Llave para 'i':</label>
+                <input type="text">
+                <label for="">Llave para 'o':</label>
+                <input type="text">
+                <label for="">Llave para 'u':</label>
+                <input type="text">
+                <p>Solo letras minúsculas y sin acentos</p>
+                <button>Guardar</button>
+                <button>Resetear</button>
+                <p></p>
+            </form>
+
+          </section>
           <!-- INPUT -->
           <form class="form">
             <div class="container-textarea">
@@ -57,8 +80,8 @@
           </form>
 
           <!-- OUTPUT -->
-          <article class="output">
-            <div class="output-init">
+          <section class="output">
+            <article class="output-init">
               <div class="output-img">
                 <img
                   src="images/ilustracion.svg"
@@ -70,8 +93,8 @@
               <p class="output-description">
                 Ingresa el texto que desees encriptar o desencriptar.
               </p>
-            </div>
-            <div class="output-message hide">
+            </article>
+            <article class="output-message hide">
               <form class="form-output">
                 <textarea
                   name="message-return"
@@ -82,9 +105,9 @@
                 <button class="btn btn-copy">Copiar</button>
                 <p class="copiado-exito">¡Texto copiado con éxito!</p>
               </form>
-            </div>
-          </article>
-        </section>
+            </article>
+          </section>
+        </div>
       </div>
     </main>
 

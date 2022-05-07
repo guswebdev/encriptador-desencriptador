@@ -66,6 +66,10 @@
     flex-direction: column;
     gap: 4rem;
   }
+
+  .form-llaves *{
+    display: block;
+  }
   
   /* -- INPUT -- */
   .form {
@@ -94,6 +98,7 @@
     font-size: .8rem;
     color: var(--color-gray-400);
     padding: .5rem;
+    transition: all .3s;
   }
 
   .info-text span {
