@@ -1,11 +1,12 @@
 const d = document;
 
-export function encriptar() {
+export function encriptar(keys) {
   d.addEventListener("click", (e) => {
     if (e.target.matches(".btn-encriptar")) {
       e.preventDefault();
       let newArr = [];
-      let keys = ["ai", "enter", "imes", "ober", "ufat"];
+      console.log(keys)
+      //let keys = ["ai", "enter", "imes", "ober", "ufat"];
       let cadena = d.querySelector(".textarea").value;
       let regExp = /[A-Z\u00C0-\u017F]/g;
       if (!regExp.test(cadena)) {

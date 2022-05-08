@@ -1,11 +1,11 @@
 const d = document;
 
-export function desencriptar() {
+export function desencriptar(keys) {
   d.addEventListener("click", (e) => {
     if (e.target.matches(".btn-desencriptar")) {
       e.preventDefault();
       let newArr = [];
-      let keys = ["ai", "enter", "imes", "ober", "ufat"];
+      //let keys = ["ai", "enter", "imes", "ober", "ufat"];
       let cadena = d.querySelector(".textarea").value;
       let array = cadena.toLowerCase().split("");
       let regExp = /[A-Z\u00C0-\u017F]/g;
