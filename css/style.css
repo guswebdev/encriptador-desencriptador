@@ -64,15 +64,70 @@ main {
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 1rem;
+}
+
+.container-llaves {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.llaves-title{
+  color: var(--color-darkblue-400);
+  font-size: 2rem;
+}
+
+.llaves-description {
+  line-height: 2;
+}
+
+.llaves-title-h3 {
+  color: var(--color-darkblue-400);
 }
 
 .form-llaves * {
   display: block;
 }
 
+.form-llaves {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.form-label span{
+  margin-bottom: .5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: .3rem;
+  border-radius: 5px;
+}
+
+.form-alert{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin: .5rem 0;
+  font-size: 0.8rem;
+  color: var(--color-gray-400);
+  transition: all 0.3s;
+  /*
+  visibility: hidden;
+  opacity: 0;
+  */
+}
+
+.form-success{
+  visibility: hidden;
+  opacity: 0;
+}
+
 .form-btns {
   display: flex;
+  gap: 1rem;
 }
 
 .encript {
@@ -242,7 +297,7 @@ main {
   }
 
   .container-llaves {
-    flex-basis: 30%;
+    flex-basis: 40%;
   }
 
   .encript {
