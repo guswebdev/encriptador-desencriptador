@@ -5,16 +5,12 @@ import { encriptar } from "./js/encriptar.js";
 
 const d = document;
 
-d.addEventListener("DOMContentLoaded", () => {
+const inicio = () => {
   const keys = capturarLlaves();
-  //console.error(keys)
-  /*
-  aca tendria que validar las llaves
-  tambien tengo que validar el otro formulario aca
-  */
   encriptar(keys);
   desencriptar(keys);
-  //desencriptar();
-  //encriptar();
   copiar();
-});
+}
+
+
+d.addEventListener('DOMContentLoaded', inicio)
