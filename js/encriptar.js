@@ -23,7 +23,6 @@ export function encriptar(e, keys) {
       }
     });
     let result = newArr.join("");
-    //console.log(result);
     d.querySelector(".output-message").classList.remove("hide");
     d.querySelector(".output-init").classList.add("hide");
     d.querySelector(".output-textarea").value = `${result}`;

@@ -37,7 +37,7 @@ d.addEventListener("click", click);
 
 //EVENTO SUBMIT
 const submit = (e) => {
-  cambiarLlaves(e,keys)
+  keys = cambiarLlaves(e,keys)
 }
 
 d.addEventListener("submit", submit);
