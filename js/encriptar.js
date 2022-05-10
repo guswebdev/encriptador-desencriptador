@@ -3,8 +3,6 @@ const d = document;
 export function encriptar(e, keys) {
   e.preventDefault();
   let newArr = [];
-  console.log(keys);
-  //let keys = ["ai", "enter", "imes", "ober", "ufat"];
   let cadena = d.querySelector(".textarea").value;
   let regExp = /[A-Z\u00C0-\u017F]/g;
   if (!regExp.test(cadena)) {

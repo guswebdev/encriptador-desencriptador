@@ -1,3 +1,4 @@
+import { cambiarLlaves } from "./js/cambiar-llaves.js";
 import { capturarLlaves } from "./js/capturar-llaves.js";
 import { copiar } from "./js/copiar.js";
 import { desencriptar } from "./js/desencriptar.js";
@@ -6,14 +7,15 @@ import { encriptar } from "./js/encriptar.js";
 const d = document;
 let keys;
 
+//EVENTO CARGA DEL DOM
+
 const inicio = () => {
   keys = capturarLlaves();
-  //encriptar(keys);
-  //desencriptar(keys);
-  //copiar();
 };
 
 d.addEventListener("DOMContentLoaded", inicio);
+
+//EVENTO CLICK
 
 const click = (e) => {
   if (e.target.matches(".btn-encriptar")) {
@@ -31,3 +33,11 @@ const click = (e) => {
 };
 
 d.addEventListener("click", click);
+
+
+//EVENTO SUBMIT
+const submit = (e) => {
+  cambiarLlaves(e,keys)
+}
+
+d.addEventListener("submit", submit);
