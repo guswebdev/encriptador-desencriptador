@@ -11,19 +11,23 @@ const inicio = () => {
   //encriptar(keys);
   //desencriptar(keys);
   //copiar();
-}
+};
 
-
-d.addEventListener('DOMContentLoaded', inicio)
+d.addEventListener("DOMContentLoaded", inicio);
 
 const click = (e) => {
-
-  if (e.target.matches(".btn-encriptar")){
-    encriptar(e,keys);
+  if (e.target.matches(".btn-encriptar")) {
+    encriptar(e, keys);
   }
 
-  desencriptar(keys);
-  copiar();
-}
+  if (e.target.matches(".btn-desencriptar")) {
+    desencriptar(e, keys);
+  }
 
-d.addEventListener('click', click)
+  if(e.target.matches('.btn-copy')){
+    copiar(e);       
+  }
+
+};
+
+d.addEventListener("click", click);
