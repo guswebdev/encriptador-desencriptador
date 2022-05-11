@@ -70,10 +70,10 @@ main {
 .container-llaves {
   display: flex;
   flex-direction: column;
-  gap: .75rem;
+  gap: 0.75rem;
 }
 
-.llaves-title{
+.llaves-title {
   color: var(--color-darkblue-400);
   font-size: 2rem;
 }
@@ -93,35 +93,31 @@ main {
 .form-llaves {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
-.form-label span{
-  margin-bottom: .5rem;
+.form-label span {
+  margin-bottom: 0.5rem;
 }
 
 .form-input {
   width: 100%;
-  padding: .3rem;
+  padding: 0.3rem;
   border-radius: 5px;
 }
 
-.form-alert{
+.form-alert {
   display: flex;
   align-items: center;
-  gap: .5rem;
-  padding: .5rem;
-  
+  gap: 0.5rem;
+  padding: 0.5rem;
+
   font-size: 0.8rem;
   color: var(--color-gray-400);
   transition: all 0.3s;
-  /*
-  visibility: hidden;
-  opacity: 0;
-  */
 }
 
-.form-success{
+.form-success {
   color: white;
   background-color: rgb(74, 173, 74);
   border-radius: 5px;
@@ -129,7 +125,7 @@ main {
   transition: all 0.3s;
 }
 
-.form-success-show{
+.form-success-show {
   visibility: hidden;
   opacity: 0;
 }
@@ -196,7 +192,6 @@ main {
   cursor: pointer;
   background-color: var(--color-darkblue-300);
   color: var(--color-white);
-  
 }
 
 .btn:hover {
@@ -218,13 +213,7 @@ main {
   gap: 1rem;
   color: var(--color-gray-500);
 }
-/*
-.output-init {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-}
-*/
+
 .form-output {
   display: flex;
   flex-direction: column;
@@ -235,7 +224,7 @@ main {
   background-color: var(--color-white);
 }
 
-.output-img img{
+.output-img img {
   max-width: 250px;
   margin: auto;
 }
@@ -285,7 +274,7 @@ main {
 
 /* -- MEDIA QUERIES TABLET -- */
 @media screen and (min-width: 768px) {
-  .btns{
+  .btns {
     flex-direction: row;
   }
 
@@ -310,6 +299,4 @@ main {
   .encript {
     flex-basis: 50%;
   }
-
-  
 }

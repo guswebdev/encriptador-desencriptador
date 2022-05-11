@@ -1,19 +1,7 @@
 const d = document;
-/* FUNCIONA
-export function cambiarLlaves(e,keys) {
-  e.preventDefault();
-  keys.length = 0;
-  const arrValue = d.querySelectorAll(".form-input");
-  arrValue.forEach((item) => keys.push(item.value));
-
-  console.log(keys)
-  return keys
-}
-*/
 
 export function cambiarLlaves(e, keys) {
   e.preventDefault();
-  //keys.length = 0;
   const newKeys = [];
   const arrValue = d.querySelectorAll(".form-input");
   let regExp = /[A-Z\u00C0-\u017F]/g;
@@ -38,7 +26,7 @@ export function cambiarLlaves(e, keys) {
     d.querySelector(".form-alert").classList.remove("color-red");
     d.querySelector(".form-success").classList.remove("form-success-show");
     setTimeout(() => {
-        d.querySelector(".form-success").classList.add("form-success-show");
+      d.querySelector(".form-success").classList.add("form-success-show");
     }, 2000);
     return newKeys;
   }

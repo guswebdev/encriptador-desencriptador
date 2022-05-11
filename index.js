@@ -27,21 +27,20 @@ const click = (e) => {
     desencriptar(e, keys);
   }
 
-  if(e.target.matches('.btn-copy')){
-    copiar(e);       
+  if (e.target.matches(".btn-copy")) {
+    copiar(e);
   }
-  
-  if(e.target.matches('.btn-reset')){
-    reset(e) 
+
+  if (e.target.matches(".btn-reset")) {
+    reset(e);
   }
 };
 
 d.addEventListener("click", click);
 
-
 //EVENTO SUBMIT
 const submit = (e) => {
-  keys = cambiarLlaves(e,keys)
-}
+  keys = cambiarLlaves(e, keys);
+};
 
 d.addEventListener("submit", submit);
