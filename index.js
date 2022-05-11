@@ -3,6 +3,7 @@ import { capturarLlaves } from "./js/capturar-llaves.js";
 import { copiar } from "./js/copiar.js";
 import { desencriptar } from "./js/desencriptar.js";
 import { encriptar } from "./js/encriptar.js";
+import { reset } from "./js/reset.js";
 
 const d = document;
 let keys;
@@ -29,7 +30,10 @@ const click = (e) => {
   if(e.target.matches('.btn-copy')){
     copiar(e);       
   }
-
+  
+  if(e.target.matches('.btn-reset')){
+    reset(e) 
+  }
 };
 
 d.addEventListener("click", click);
